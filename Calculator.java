@@ -14,6 +14,7 @@ public double si;
 public double amount;
 public double ci;
 public int avg;
+public int avg_three;
 
 public Calculator() {
 	
@@ -60,14 +61,28 @@ public Calculator() {
 		return avg;
 			
 	}
+
+            /**
+	 * This method is used to calculate the average of three
+	 * @param num1 this is the first number
+	 * @param num2 this is the second number
+	 * @param num3 this is the third number 
+	 * @return average
+	 */
+            public int avgthree(int num1,int num2,int num3) {
+		avg=(num1+num2+num3)/3;
+		return avg_three;
+			
+	}
 	/**
-	 * This method is used to display the values
+	 * This method is used to display 
 	 */
 	
 	public void display() {
 		System.out.println("simple interet: "+si);
 		System.out.println("compound interest : "+ci);
 		System.out.println("Average of 5: "+avg);
+                        System.out.println("Average of 3: "+avg_three)
 	}
 
 }
